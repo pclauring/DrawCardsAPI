@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "DrawFromDeck";
+}
+
+<h2>Draw From Deck</h2>
+
+<h3>@ViewBag.DeckId</h3>
+
+@for (int i = 0; i < @ViewBag.Draw.Count; i++)
+{
+    <img src="@ViewBag.Draw[i]["images"]["png"]" />
+}
